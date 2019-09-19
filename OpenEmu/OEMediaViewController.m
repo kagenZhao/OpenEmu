@@ -178,11 +178,7 @@ static NSString * const OESelectedMediaKey = @"_OESelectedMediaKey";
     OELibraryController *libraryController = self.libraryController;
     OELibraryToolbar *toolbar = libraryController.toolbar;
     
-    toolbar.gridViewButton.enabled = NO;
-    toolbar.listViewButton.enabled = NO;
-    toolbar.gridViewButton.state = NSControlStateValueOff;
-    toolbar.listViewButton.state = NSControlStateValueOff;
-    
+    toolbar.viewSelector.enabled = NO;
     toolbar.gridSizeSlider.enabled = !_shouldShowBlankSlate;
     
     NSSearchField *field = toolbar.searchField;
@@ -205,10 +201,7 @@ static NSString * const OESelectedMediaKey = @"_OESelectedMediaKey";
         toolbar.searchField.enabled = !_shouldShowBlankSlate;
         toolbar.gridSizeSlider.enabled = !_shouldShowBlankSlate;
         
-        toolbar.gridViewButton.enabled = NO;
-        toolbar.listViewButton.enabled = NO;
-        toolbar.gridViewButton.state = NSControlStateValueOff;
-        toolbar.listViewButton.state = NSControlStateValueOff;
+        toolbar.viewSelector.enabled = YES;
     }
 }
 
