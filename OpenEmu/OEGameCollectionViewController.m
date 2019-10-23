@@ -51,7 +51,6 @@
 #import "OEThemeObject.h"
 #import "OEThemeImage.h"
 
-#import "OESearchField.h"
 #import "OETableView.h"
 
 #import "IKImageFlowView.h"
@@ -113,7 +112,7 @@ static NSString * const OESelectedGamesKey = @"OESelectedGamesKey";
     
     [self OE_setupToolbarStatesForViewTag:self.selectedViewTag];
     
-    OESearchField *searchField = self.libraryController.toolbar.searchField;
+    NSSearchField *searchField = self.libraryController.toolbar.searchField;
     searchField.enabled = YES;
     searchField.stringValue = self.currentSearchTerm ?: @"";
     

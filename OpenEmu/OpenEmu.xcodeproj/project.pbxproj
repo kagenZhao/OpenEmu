@@ -229,8 +229,6 @@
 		53439AA613B92CC7005C0CC8 /* OELibraryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53439AA513B92CC7005C0CC8 /* OELibraryController.m */; };
 		53439AAB13B92CE6005C0CC8 /* OECollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53439AA913B92CE5005C0CC8 /* OECollectionViewController.m */; };
 		53439AE313B92E59005C0CC8 /* OERatingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53439ADA13B92E59005C0CC8 /* OERatingCell.m */; };
-		53439AE413B92E59005C0CC8 /* OETableCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53439ADC13B92E59005C0CC8 /* OETableCornerView.m */; };
-		53439AE513B92E59005C0CC8 /* OETableHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53439ADE13B92E59005C0CC8 /* OETableHeaderCell.m */; };
 		53439AE613B92E59005C0CC8 /* OETableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53439AE013B92E59005C0CC8 /* OETableHeaderView.m */; };
 		53439AE713B92E59005C0CC8 /* OETableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53439AE213B92E59005C0CC8 /* OETableView.m */; };
 		53439AEB13B92E91005C0CC8 /* OELibrarySplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53439AEA13B92E91005C0CC8 /* OELibrarySplitView.m */; };
@@ -346,7 +344,6 @@
 		836291FE1515F30700192116 /* OEFSWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 836291FD1515F30700192116 /* OEFSWatcher.m */; };
 		83633447195D798600470AB8 /* OEDBScreenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 83633446195D798600470AB8 /* OEDBScreenshot.m */; };
 		8363A43A193CBAFA00F18425 /* OEGridMediaItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8363A439193CBAFA00F18425 /* OEGridMediaItemCell.m */; };
-		8363A43F193CD12C00F18425 /* OEGridMediaGroupItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8363A43E193CD12C00F18425 /* OEGridMediaGroupItemCell.m */; };
 		836AEA6E19755FE300B86935 /* OEOutlinedButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AEA6D19755FE300B86935 /* OEOutlinedButtonCell.m */; };
 		836AEA711975BFE100B86935 /* OEGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AEA701975BFE100B86935 /* OEGridCell.m */; };
 		836BC9571853815A00B6AF26 /* OESQLiteDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 836BC9561853815A00B6AF26 /* OESQLiteDatabase.m */; };
@@ -402,7 +399,6 @@
 		83D175B318FF155700E5ED34 /* OEBlankSlateBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D175B218FF155700E5ED34 /* OEBlankSlateBackgroundView.m */; };
 		83D33BD61AEB9ABE0085753B /* ALIterativeMigrator.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D33BD51AEB9ABE0085753B /* ALIterativeMigrator.m */; };
 		83D7F2BA147E399B004419A6 /* OEDBRom.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AC27F14434EED00AC74C3 /* OEDBRom.m */; };
-		83D94FAF19A4CD2A007583E1 /* OETableCellGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D94FAE19A4CD2A007583E1 /* OETableCellGroupView.m */; };
 		83DBA2271906A250000815B9 /* 1.1 to 1.2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 83DBA2261906A250000815B9 /* 1.1 to 1.2.xcmappingmodel */; };
 		83DC1FCD147085C800F3D77A /* controller_gba.png in Resources */ = {isa = PBXBuildFile; fileRef = 83DC1FCA1470857900F3D77A /* controller_gba.png */; };
 		83DDEE87156CE2F0009EB43D /* OEFadeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDEE86156CE2F0009EB43D /* OEFadeView.m */; };
@@ -1625,10 +1621,6 @@
 		53439AD813B92E59005C0CC8 /* OEListViewDataSourceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEListViewDataSourceItem.h; sourceTree = "<group>"; };
 		53439AD913B92E59005C0CC8 /* OERatingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OERatingCell.h; sourceTree = "<group>"; };
 		53439ADA13B92E59005C0CC8 /* OERatingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OERatingCell.m; sourceTree = "<group>"; };
-		53439ADB13B92E59005C0CC8 /* OETableCornerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OETableCornerView.h; sourceTree = "<group>"; };
-		53439ADC13B92E59005C0CC8 /* OETableCornerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OETableCornerView.m; sourceTree = "<group>"; };
-		53439ADD13B92E59005C0CC8 /* OETableHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OETableHeaderCell.h; sourceTree = "<group>"; };
-		53439ADE13B92E59005C0CC8 /* OETableHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OETableHeaderCell.m; sourceTree = "<group>"; };
 		53439ADF13B92E59005C0CC8 /* OETableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OETableHeaderView.h; sourceTree = "<group>"; };
 		53439AE013B92E59005C0CC8 /* OETableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OETableHeaderView.m; sourceTree = "<group>"; };
 		53439AE113B92E59005C0CC8 /* OETableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OETableView.h; sourceTree = "<group>"; };
@@ -1854,8 +1846,6 @@
 		8363A439193CBAFA00F18425 /* OEGridMediaItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEGridMediaItemCell.m; sourceTree = "<group>"; };
 		8363A43B193CBB7700F18425 /* IKImageBrowserCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IKImageBrowserCell.h; sourceTree = "<group>"; };
 		8363A43C193CC1BF00F18425 /* OECollectionViewItemProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OECollectionViewItemProtocol.h; sourceTree = "<group>"; };
-		8363A43D193CD12C00F18425 /* OEGridMediaGroupItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEGridMediaGroupItemCell.h; sourceTree = "<group>"; };
-		8363A43E193CD12C00F18425 /* OEGridMediaGroupItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEGridMediaGroupItemCell.m; sourceTree = "<group>"; };
 		8363A440193CF41200F18425 /* IKOpenGLRoundedRectRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IKOpenGLRoundedRectRenderer.h; sourceTree = "<group>"; };
 		836AEA6C19755FE300B86935 /* OEOutlinedButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEOutlinedButtonCell.h; sourceTree = "<group>"; };
 		836AEA6D19755FE300B86935 /* OEOutlinedButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEOutlinedButtonCell.m; sourceTree = "<group>"; };
@@ -1956,8 +1946,6 @@
 		83D175B918FF218200E5ED34 /* OEDatabase 1.2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "OEDatabase 1.2.xcdatamodel"; sourceTree = "<group>"; };
 		83D33BD41AEB9ABE0085753B /* ALIterativeMigrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALIterativeMigrator.h; sourceTree = "<group>"; };
 		83D33BD51AEB9ABE0085753B /* ALIterativeMigrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALIterativeMigrator.m; sourceTree = "<group>"; };
-		83D94FAD19A4CD2A007583E1 /* OETableCellGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OETableCellGroupView.h; sourceTree = "<group>"; };
-		83D94FAE19A4CD2A007583E1 /* OETableCellGroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OETableCellGroupView.m; sourceTree = "<group>"; };
 		83D9991D146F40DA004409DC /* OEControlsKeySeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEControlsKeySeparatorView.h; sourceTree = "<group>"; };
 		83D9991E146F40DA004409DC /* OEControlsKeySeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEControlsKeySeparatorView.m; sourceTree = "<group>"; };
 		83DBA2261906A250000815B9 /* 1.1 to 1.2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "1.1 to 1.2.xcmappingmodel"; sourceTree = "<group>"; };
@@ -3700,6 +3688,7 @@
 				8363A43C193CC1BF00F18425 /* OECollectionViewItemProtocol.h */,
 				8363A43D193CD12C00F18425 /* OEGridMediaGroupItemCell.h */,
 				8363A43E193CD12C00F18425 /* OEGridMediaGroupItemCell.m */,
+				05C756962335B5200022F933 /* NSCollectionView */,
 				53439AAE13B92CFE005C0CC8 /* Grid View */,
 				53439AAD13B92CFC005C0CC8 /* List View */,
 				83955CB9165DAE7900572B34 /* Blank Slate View */,
@@ -3715,16 +3704,10 @@
 				53439AD813B92E59005C0CC8 /* OEListViewDataSourceItem.h */,
 				53439AD913B92E59005C0CC8 /* OERatingCell.h */,
 				53439ADA13B92E59005C0CC8 /* OERatingCell.m */,
-				53439ADB13B92E59005C0CC8 /* OETableCornerView.h */,
-				53439ADC13B92E59005C0CC8 /* OETableCornerView.m */,
-				53439ADD13B92E59005C0CC8 /* OETableHeaderCell.h */,
-				53439ADE13B92E59005C0CC8 /* OETableHeaderCell.m */,
 				53439ADF13B92E59005C0CC8 /* OETableHeaderView.h */,
 				53439AE013B92E59005C0CC8 /* OETableHeaderView.m */,
 				53439AE113B92E59005C0CC8 /* OETableView.h */,
 				53439AE213B92E59005C0CC8 /* OETableView.m */,
-				83D94FAD19A4CD2A007583E1 /* OETableCellGroupView.h */,
-				83D94FAE19A4CD2A007583E1 /* OETableCellGroupView.m */,
 				8370D3DA1A8D25D900313F87 /* OETableCellView.h */,
 				8370D3DB1A8D25D900313F87 /* OETableCellView.m */,
 			);
@@ -6394,7 +6377,7 @@
 						ProvisioningStyle = Manual;
 					};
 					1BEF2A9311682A530090F72B = {
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					277CBA3219DE54200059A2C1 = {
 						ProvisioningStyle = Manual;
@@ -7637,8 +7620,6 @@
 				8306CD3E1BD3DB180025BC6C /* OEGameCollectionViewController.m in Sources */,
 				53439AAB13B92CE6005C0CC8 /* OECollectionViewController.m in Sources */,
 				53439AE313B92E59005C0CC8 /* OERatingCell.m in Sources */,
-				53439AE413B92E59005C0CC8 /* OETableCornerView.m in Sources */,
-				53439AE513B92E59005C0CC8 /* OETableHeaderCell.m in Sources */,
 				53439AE613B92E59005C0CC8 /* OETableHeaderView.m in Sources */,
 				53439AE713B92E59005C0CC8 /* OETableView.m in Sources */,
 				53439AEB13B92E91005C0CC8 /* OELibrarySplitView.m in Sources */,
@@ -7657,7 +7638,6 @@
 				83E8927D197490B3004D4489 /* OEDisabledScrollView.m in Sources */,
 				83F444FD196CA24B007E8C63 /* OEHomebrewViewController.m in Sources */,
 				830CB918186878D6006EAE5A /* OEArrayController.m in Sources */,
-				8363A43F193CD12C00F18425 /* OEGridMediaGroupItemCell.m in Sources */,
 				53439B6E13B932DB005C0CC8 /* OEPrefLibraryController.m in Sources */,
 				0557CB1B22A781B60037175F /* OEShadersModel+OpenEmu.swift in Sources */,
 				53439B7113B932ED005C0CC8 /* OEPrefGameplayController.m in Sources */,
@@ -7728,7 +7708,6 @@
 				836BC95A1853817500B6AF26 /* OEGameInfoHelper.m in Sources */,
 				831C9AD0160096E000038D0D /* OEMatrix.m in Sources */,
 				831C9AD61600971600038D0D /* OEButton.m in Sources */,
-				83D94FAF19A4CD2A007583E1 /* OETableCellGroupView.m in Sources */,
 				831C9AD71600971600038D0D /* OEButtonCell.m in Sources */,
 				83D33BD61AEB9ABE0085753B /* ALIterativeMigrator.m in Sources */,
 				5A79F7951C15F542003124D5 /* PreferencesWindowController.swift in Sources */,

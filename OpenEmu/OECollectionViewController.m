@@ -35,7 +35,6 @@
 
 #import "OEButton.h"
 #import "OESearchField.h"
-#import "OETableHeaderCell.h"
 #import "OECenteredTextFieldCell.h"
 #import "OEListViewDataSourceItem.h"
 
@@ -175,11 +174,6 @@ static void *OEUserDefaultsDisplayGameTitleKVOContext = &OEUserDefaultsDisplayGa
     [listView setRowHeight:20.0];
     [listView setSortDescriptors:[self defaultSortDescriptors]];
     [listView setAllowsMultipleSelection:YES];
-
-    // There's no natural order for status indicators, so we don't allow that column to be sorted
-    OETableHeaderCell *romStatusHeaderCell = [[listView tableColumnWithIdentifier:@"listViewStatus"] headerCell];
-    [romStatusHeaderCell setClickable:NO];
-
     [listView registerForDraggedTypes:@[NSFilenamesPboardType]];
 
     for(NSTableColumn *aColumn in [listView tableColumns])
