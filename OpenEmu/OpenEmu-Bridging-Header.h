@@ -31,6 +31,7 @@
 #import "OEDatabase+CoreDataModel.h"
 #import "OEDBGame.h"
 #import "OEDBSavedGamesMedia.h"
+#import "OEDBScreenshotsMedia.h"
 
 #import "OEGameDocument.h"
 #import "OEMainWindowController.h"

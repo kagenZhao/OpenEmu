@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15504" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ScreenshotsViewController" customModule="OpenEmu" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="z2P-1K-PXA" id="B8D-dT-w7C"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="d28-O9-LD1">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <clipView key="contentView" id="btG-C4-DRG">
+                <rect key="frame" x="1" y="1" width="248" height="158"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <collectionView selectable="YES" allowsMultipleSelection="YES" id="z2P-1K-PXA" customClass="CollectionView" customModule="OpenEmu" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="248" height="158"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="20" minimumLineSpacing="20" sectionHeadersPinToVisibleBounds="YES" id="Z0G-bd-ZRg">
+                            <size key="itemSize" width="168" height="143"/>
+                            <edgeInsets key="sectionInset" left="20" right="0.0" top="10" bottom="10"/>
+                        </collectionViewFlowLayout>
+                        <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </collectionView>
+                </subviews>
+            </clipView>
+            <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="L3a-PR-GMF">
+                <rect key="frame" x="1" y="144" width="233" height="15"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </scroller>
+            <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="y44-Ea-XY1">
+                <rect key="frame" x="234" y="1" width="15" height="143"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </scroller>
+            <point key="canvasLocation" x="139" y="439"/>
+        </scrollView>
+    </objects>
+</document>

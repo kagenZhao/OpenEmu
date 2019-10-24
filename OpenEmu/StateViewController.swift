@@ -24,17 +24,11 @@
 
 import Cocoa
 
-@IBDesignable
-class GameItem: NSCollectionViewItem {
+class StateViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
     }
     
-    //MARK: Represented Object
-    
-    var foo: OECoverGridDataSourceItem? {
-        return self.representedObject as? OECoverGridDataSourceItem
-    }
 }

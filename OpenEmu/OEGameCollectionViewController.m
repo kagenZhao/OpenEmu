@@ -211,7 +211,7 @@ static NSString * const OESelectedGamesKey = @"OESelectedGamesKey";
     return [self.libraryController.currentSubviewController isKindOfClass:[OELibraryGamesViewController class]];
 }
 
-- (NSArray *)selectedGames
+- (NSArray<OEDBGame *> *)selectedGames
 {
     return [gamesController selectedObjects];
 }
@@ -398,7 +398,7 @@ static NSString * const OESelectedGamesKey = @"OESelectedGamesKey";
 {
     OECoreDataMainThreadAssertion();
 
-    NSArray *selectedGames = [self selectedGames];
+    NSArray<OEDBGame *> *selectedGames = [self selectedGames];
     BOOL multipleGames = ([selectedGames count]>1);
 
     // deleting from 'All Games', Smart Collections and consoles removes games from the library
@@ -469,7 +469,7 @@ static NSString * const OESelectedGamesKey = @"OESelectedGamesKey";
         collection = [sender representedObject];
     }
 
-    NSArray *selectedGames = [self selectedGames];
+    NSArray<OEDBGame *> *selectedGames = [self selectedGames];
     [[collection mutableGames] addObjectsFromArray:selectedGames];
     [collection save];
 
@@ -505,7 +505,7 @@ static NSString * const OESelectedGamesKey = @"OESelectedGamesKey";
         if(result != NSModalResponseOK)
             return;
 
-        NSArray *selectedGames = [self selectedGames];
+        NSArray<OEDBGame *> *selectedGames = [self selectedGames];
         [selectedGames makeObjectsPerformSelector:@selector(setBoxImageByURL:) withObject:[openPanel URL]];
         NSManagedObjectContext *context = [[selectedGames lastObject] managedObjectContext];
         [context save:nil];
@@ -814,7 +814,7 @@ static NSString * const OESelectedGamesKey = @"OESelectedGamesKey";
 
 - (void)setRatingForSelectedGames:(id)sender
 {
-    NSArray *selectedGames = [self selectedGames];
+    NSArray<OEDBGame *> *selectedGames = [self selectedGames];
     for(OEDBGame *game in selectedGames)
     {
         [game setRating:[sender representedObject]];

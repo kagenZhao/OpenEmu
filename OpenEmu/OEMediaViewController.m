@@ -287,7 +287,7 @@ static NSString * const OESelectedMediaKey = @"_OESelectedMediaKey";
 
 #pragma mark - OELibrarySubviewController Implementation
 
-- (NSArray*)selectedGames
+- (NSArray<OEDBGame *> *)selectedGames
 {
     return @[];
 }
