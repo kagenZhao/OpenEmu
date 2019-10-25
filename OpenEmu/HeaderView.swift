@@ -27,7 +27,7 @@
 import Cocoa
 
 class HeaderView: NSVisualEffectView, NSCollectionViewElement {
-
-  @IBOutlet weak var sectionTitle: NSTextField!
-  @IBOutlet weak var imageCount: NSTextField!
+    
+    @IBOutlet weak var sectionTitle: NSTextField!
+    @IBOutlet weak var imageCount: NSTextField!
 }

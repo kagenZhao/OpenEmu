@@ -23,7 +23,6 @@
 #import "OEPrefBiosController.h"
 
 #import "OECollectionViewController.h"
-#import "OELibraryController.h"
 
 #import "OEBackgroundColorView.h"
 #import "OEBackgroundImageView.h"
@@ -38,7 +37,6 @@
 #import "OEGameCollectionViewController.h"
 #import "OEMediaViewController.h"
 #import "OEHomebrewViewController.h"
-#import "OELibraryController.h"
 #import "OELibraryGamesViewController.h"
 #import "OESidebarController.h"
 #import "OEGameViewController.h"

@@ -1005,6 +1005,21 @@ extension AppDelegate: NSMenuDelegate {
         }
     }
     
+    func testLoad() {
+        guard let ctx = OELibraryDatabase.default?.mainThreadContext else { return }
+        
+        let req = NSFetchRequest<OEDBRom>(entityName: OEDBRom.entityName())
+        //req.entity = NSEntityDescription.entity(forEntityName: OEDBScreenshot.entityName(), in: ctx)
+        req.predicate = NSPredicate(format: "screenShots.@count > 0")
+        req.sortDescriptors = [NSSortDescriptor(key: "game.name", ascending: true)]
+
+        let res = try! ctx.fetch(req)
+        for item in res {
+            
+            NSLog("item: \(item)")
+        }
+    }
+    
     func libraryDatabaseDidLoad(notification: Notification) {
         
         libraryLoaded = true
@@ -1015,6 +1030,7 @@ extension AppDelegate: NSMenuDelegate {
 
         loadPlugins()
         removeIncompatibleSaveStates()
+        testLoad()
         
         DLog("")
         

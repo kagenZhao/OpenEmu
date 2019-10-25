@@ -38,10 +38,8 @@
 
 #import "OEROMImporter.h"
 
-#import "OELibraryController.h"
 
 #import "OEButton.h"
-//#import "OESearchField.h"
 
 #import "OEGridView.h"
 
@@ -106,7 +104,7 @@ static NSString * const OESelectedMediaKey = @"_OESelectedMediaKey";
     
     [self _setupToolbar];
     
-    OESearchField *searchField = self.libraryController.toolbar.searchField;
+    NSSearchField *searchField = self.libraryController.toolbar.searchField;
     searchField.enabled = YES;
     searchField.stringValue = self.currentSearchTerm ?: @"";
     

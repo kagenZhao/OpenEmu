@@ -27,32 +27,32 @@
 import Cocoa
 
 class ImageFile {
-  
-  private(set) var thumbnail: NSImage?
-  private(set) var fileName: String
-  private(set) var url: URL
-  
-  init (url: URL) {
-    self.url = url
-    var fn = url
-    while fn.pathExtension.count > 0 {
-      fn = fn.deletingPathExtension()
+    
+    private(set) var thumbnail: NSImage?
+    private(set) var fileName: String
+    private(set) var url: URL
+    
+    init (url: URL) {
+        self.url = url
+        var fn = url
+        while fn.pathExtension.count > 0 {
+            fn = fn.deletingPathExtension()
+        }
+        self.fileName = fn.lastPathComponent
+        let imageSource = CGImageSourceCreateWithURL(url as CFURL, nil)
+        if let imageSource = imageSource {
+            guard CGImageSourceGetType(imageSource) != nil else { return }
+            thumbnail = getThumbnailImage(imageSource: imageSource)
+        }
     }
-    self.fileName = fn.lastPathComponent
-    let imageSource = CGImageSourceCreateWithURL(url as CFURL, nil)
-    if let imageSource = imageSource {
-      guard CGImageSourceGetType(imageSource) != nil else { return }
-      thumbnail = getThumbnailImage(imageSource: imageSource)
+    
+    private func getThumbnailImage(imageSource: CGImageSource) -> NSImage? {
+        let thumbnailOptions = [
+            String(kCGImageSourceCreateThumbnailFromImageIfAbsent): true,
+            String(kCGImageSourceThumbnailMaxPixelSize): 320
+            ] as [String : Any]
+        guard let thumbnailRef = CGImageSourceCreateThumbnailAtIndex(imageSource, 0, thumbnailOptions as CFDictionary) else { return nil}
+        return NSImage(cgImage: thumbnailRef, size: NSSize.zero)
     }
-  }
-  
-  private func getThumbnailImage(imageSource: CGImageSource) -> NSImage? {
-    let thumbnailOptions = [
-      String(kCGImageSourceCreateThumbnailFromImageIfAbsent): true,
-      String(kCGImageSourceThumbnailMaxPixelSize): 320
-      ] as [String : Any]
-    guard let thumbnailRef = CGImageSourceCreateThumbnailAtIndex(imageSource, 0, thumbnailOptions as CFDictionary) else { return nil}
-    return NSImage(cgImage: thumbnailRef, size: NSSize.zero)
-  }
-  
+    
 }

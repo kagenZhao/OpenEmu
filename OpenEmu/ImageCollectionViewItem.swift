@@ -24,9 +24,11 @@
 
 import Cocoa
 
-class CollectionViewItem: NSCollectionViewItem {
+class ImageCollectionViewItem: NSCollectionViewItem {
     
     var selectionLayer: CALayer?
+    
+    @IBOutlet var subtitleField: NSTextField?
     
     var imageFile: ImageFile? {
         didSet {
@@ -34,10 +36,8 @@ class CollectionViewItem: NSCollectionViewItem {
             guard let imageView = imageView else { return }
             if let imageFile = imageFile {
                 imageView.image = imageFile.thumbnail
-                textField?.stringValue = imageFile.fileName
             } else {
                 imageView.image = nil
-                textField?.stringValue = ""
             }
         }
     }
@@ -65,6 +65,8 @@ class CollectionViewItem: NSCollectionViewItem {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        textField?.stringValue = ""
+        subtitleField?.stringValue = ""
         selectionLayer?.removeFromSuperlayer()
         selectionLayer = nil
     }
@@ -100,5 +102,15 @@ class CollectionViewItem: NSCollectionViewItem {
             sel.removeFromSuperlayer()
             selectionLayer = nil
         }
+    }
+}
+
+extension ImageCollectionViewItem: QLPreviewItem {
+    var previewItemURL: URL! {
+        return imageFile?.url
+    }
+    
+    var previewItemTitle: String! {
+        return imageFile?.fileName
     }
 }

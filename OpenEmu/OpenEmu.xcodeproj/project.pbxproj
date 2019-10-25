@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -127,6 +127,7 @@
 		052B9296226ED63200701431 /* OEMTLGameRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 052B9294226ED63200701431 /* OEMTLGameRenderer.m */; };
 		052B92D3226EE5FA00701431 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 052B92D2226EE5FA00701431 /* libc++.tbd */; };
 		052B92D4226EE66C00701431 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 052B92D2226EE5FA00701431 /* libc++.tbd */; };
+		052E6D52236BBBB600255564 /* CollectionViewOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E6D51236BBBB600255564 /* CollectionViewOperations.swift */; };
 		052EA5BC2357941100DEC2A3 /* NSBitmapImageRep+OEAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052EA5BB2357941100DEC2A3 /* NSBitmapImageRep+OEAdditions.swift */; };
 		05410EE122F68ED900303424 /* ShaderParameters.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05410EE022F68ED900303424 /* ShaderParameters.xib */; };
 		05410EE722F690E200303424 /* OEShaderParametersWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05410EE622F690E200303424 /* OEShaderParametersWindowController.m */; };
@@ -149,9 +150,11 @@
 		0557CB1B22A781B60037175F /* OEShadersModel+OpenEmu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0557CB1A22A781B60037175F /* OEShadersModel+OpenEmu.swift */; };
 		05644A4823331EA90033576F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05644A4723331EA90033576F /* AboutViewController.swift */; };
 		0586AB22231A1E9A00BCDA6B /* OEGameLayerNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0586AB21231A1E9A00BCDA6B /* OEGameLayerNotificationView.swift */; };
-		05B753A023330EB60063BD73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B753A223330EB60063BD73 /* Main.storyboard */; };
+		0592E031236CFFAB00A46885 /* ImageCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592E030236CFFAB00A46885 /* ImageCollectionViewItem.swift */; };
+		0592E036236CFFB600A46885 /* ImageCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0592E035236CFFB600A46885 /* ImageCollectionViewItem.xib */; };
 		05B2E05E23693A7600644C58 /* OELogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B2E05D23693A7500644C58 /* OELogging.m */; };
 		05B2E05F23693A7600644C58 /* OELogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B2E05D23693A7500644C58 /* OELogging.m */; };
+		05B753A023330EB60063BD73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B753A223330EB60063BD73 /* Main.storyboard */; };
 		05E4400B22991527009E6D27 /* Shaders in Resources */ = {isa = PBXBuildFile; fileRef = 05E4400A22991527009E6D27 /* Shaders */; };
 		05F5BAE9228662C5004D713C /* OpenEmuShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F5BAE8228662C5004D713C /* OpenEmuShaders.framework */; };
 		05F5BAED228662D3004D713C /* OpenEmuShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F5BAE8228662C5004D713C /* OpenEmuShaders.framework */; };
@@ -1448,6 +1451,7 @@
 		052B9293226ED63200701431 /* OEMTLGameRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OEMTLGameRenderer.h; sourceTree = "<group>"; };
 		052B9294226ED63200701431 /* OEMTLGameRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OEMTLGameRenderer.m; sourceTree = "<group>"; };
 		052B92D2226EE5FA00701431 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		052E6D51236BBBB600255564 /* CollectionViewOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewOperations.swift; sourceTree = "<group>"; };
 		052EA5BB2357941100DEC2A3 /* NSBitmapImageRep+OEAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBitmapImageRep+OEAdditions.swift"; sourceTree = "<group>"; };
 		05410EE022F68ED900303424 /* ShaderParameters.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShaderParameters.xib; sourceTree = "<group>"; };
 		05410EE522F690DB00303424 /* OEShaderParametersWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEShaderParametersWindowController.h; sourceTree = "<group>"; };
@@ -1481,9 +1485,11 @@
 		05644A1A2333130B0033576F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		05644A4723331EA90033576F /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		0586AB21231A1E9A00BCDA6B /* OEGameLayerNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OEGameLayerNotificationView.swift; sourceTree = "<group>"; };
-		05B753A123330EB60063BD73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0592E030236CFFAB00A46885 /* ImageCollectionViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewItem.swift; sourceTree = "<group>"; };
+		0592E035236CFFB600A46885 /* ImageCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionViewItem.xib; sourceTree = "<group>"; };
 		05B2E05923693A7500644C58 /* OELogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OELogging.h; sourceTree = "<group>"; };
 		05B2E05D23693A7500644C58 /* OELogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OELogging.m; sourceTree = "<group>"; };
+		05B753A123330EB60063BD73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05E4400A22991527009E6D27 /* Shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Shaders; sourceTree = "<group>"; };
 		05F5BAE8228662C5004D713C /* OpenEmuShaders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OpenEmuShaders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F6381222E3C08100FC49FF /* OEShaderParamValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OEShaderParamValue.h; sourceTree = "<group>"; };
@@ -3139,14 +3145,17 @@
 			isa = PBXGroup;
 			children = (
 				0542764C236130D1009B6615 /* CollectionView.swift */,
+				052E6D51236BBBB600255564 /* CollectionViewOperations.swift */,
 				0542764E236130F5009B6615 /* CollectionViewItem.swift */,
 				05427656236131A2009B6615 /* CollectionViewItem.xib */,
+				0592E030236CFFAB00A46885 /* ImageCollectionViewItem.swift */,
+				0592E035236CFFB600A46885 /* ImageCollectionViewItem.xib */,
 				054276522361318E009B6615 /* HeaderView.swift */,
 				0542765423613199009B6615 /* HeaderView.xib */,
 				0542765823613221009B6615 /* ImageFile.swift */,
-				0542765A2361355E009B6615 /* StateViewController.swift */,
 				0542765C2361357F009B6615 /* ScreenshotsViewController.swift */,
 				0542766023614954009B6615 /* ScreenshotsViewController.xib */,
+				0542765A2361355E009B6615 /* StateViewController.swift */,
 			);
 			name = "Media View";
 			sourceTree = "<group>";
@@ -3722,8 +3731,6 @@
 				94A4E995179FAB9F00AD8C7D /* OEMediaViewController.m */,
 				5A6C157B1DC96C3700839986 /* OEMediaViewController+TouchBar.swift */,
 				8363A43C193CC1BF00F18425 /* OECollectionViewItemProtocol.h */,
-				8363A43D193CD12C00F18425 /* OEGridMediaGroupItemCell.h */,
-				8363A43E193CD12C00F18425 /* OEGridMediaGroupItemCell.m */,
 				05C756962335B5200022F933 /* Media View */,
 				53439AAE13B92CFE005C0CC8 /* Grid View */,
 				53439AAD13B92CFC005C0CC8 /* List View */,
@@ -6412,7 +6419,7 @@
 						ProvisioningStyle = Manual;
 					};
 					1BEF2A9311682A530090F72B = {
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					277CBA3219DE54200059A2C1 = {
 						ProvisioningStyle = Manual;
@@ -6853,6 +6860,7 @@
 				8F5074741C10BCEC00F52B83 /* OELibraryGamesViewController.xib in Resources */,
 				82DD29DB12369F1100B58A8F /* KeyboardUsages.plist in Resources */,
 				833ADC4D196B078E00217D9A /* OECollectionViewController.xib in Resources */,
+				0592E036236CFFB600A46885 /* ImageCollectionViewItem.xib in Resources */,
 				8F071F3B1C255362007B76DA /* Credits.rtf in Resources */,
 				0542765523613199009B6615 /* HeaderView.xib in Resources */,
 				05410EF522F7573D00303424 /* CheckboxCell.xib in Resources */,
@@ -7654,6 +7662,7 @@
 				53439AA213B92C9D005C0CC8 /* OEDBGame.m in Sources */,
 				05FB7D8522A0A4A40070633C /* OECoreVideoTexture.m in Sources */,
 				53439AA313B92C9D005C0CC8 /* OEDBSystem.m in Sources */,
+				052E6D52236BBBB600255564 /* CollectionViewOperations.swift in Sources */,
 				5A9606EA1C0BD2BD0089B494 /* DLog.swift in Sources */,
 				8306CD3E1BD3DB180025BC6C /* OEGameCollectionViewController.m in Sources */,
 				53439AAB13B92CE6005C0CC8 /* OECollectionViewController.m in Sources */,
@@ -7769,6 +7778,7 @@
 				8397082F163C405000E04871 /* 0.2 to 0.3.xcmappingmodel in Sources */,
 				14F8750D1649377E002AE3B8 /* OEFiniteStateMachine.m in Sources */,
 				5A575DFB1E92B6CE00491B0D /* BIOSFile.swift in Sources */,
+				0592E031236CFFAB00A46885 /* ImageCollectionViewItem.swift in Sources */,
 				05F6381422E3C08100FC49FF /* OEShaderParamValue.m in Sources */,
 				83955CB5165D939100572B34 /* OEBlankSlateView.m in Sources */,
 				83C6C1DC190536CC00DD7B13 /* OEDBImageMigrationPolicy.m in Sources */,
@@ -10639,7 +10649,7 @@
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				SDKROOT = macosx;
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG_PRINT DEBUG";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG_PRINT DEBUG USE_NEW";
 			};
 			name = Debug;
 		};

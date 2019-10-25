@@ -65,20 +65,26 @@ class OELibraryController: NSViewController {
         saveStatesViewController.libraryController = self
         saveStatesViewController.representedObject = OEDBSavedGamesMedia.shared
         
+        #if !USE_NEW
         screenshotsViewController = OEMediaViewController()
         screenshotsViewController.libraryController = self
         screenshotsViewController.representedObject = OEDBScreenshotsMedia.shared
-        
+        #else
         screenshotsViewController2 = ScreenshotsViewController()
         screenshotsViewController2.libraryController = self;
         screenshotsViewController2.representedObject = OEDBScreenshotsMedia.shared;
+        #endif
         
         homebrewViewController = OEHomebrewViewController();
         homebrewViewController.libraryController = self;
         
         addChild(libraryGamesViewController)
         addChild(saveStatesViewController)
+        #if !USE_NEW
         addChild(screenshotsViewController)
+        #else
+        addChild(screenshotsViewController2)
+        #endif
         addChild(homebrewViewController)
     }
     
@@ -198,7 +204,11 @@ class OELibraryController: NSViewController {
             return saveStatesViewController
             
         case .screenshots:
+            #if !USE_NEW
             return screenshotsViewController
+            #else
+            return screenshotsViewController2
+            #endif
             
         case .homebrew:
             return homebrewViewController
